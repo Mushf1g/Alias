@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALiAS</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/general.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        max-height: 49rem;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="info">
+      <i class="bi bi-list-nested" onclick="myFunction()"></i>
+      <i class="bi bi-x-lg"></i>
+      <div class="info__start">
+        <i class="bi bi-geo-alt-fill"></i>
+        <p>
+          Bakı şəh., Nərimanov r-nu, X.Şuşinski ilə M.Sənani küçələrinin
+          kəsişməsi (Bina MTK)
+        </p>
+      </div>
+      <div class="info__end">
+        <div class="info__end-1">
+          <i class="bi bi-telephone-fill"></i>
+          <a href="#">(994) 12 480 10 22</a>
+          <a href="#">(994) 55 281 86 84</a>
+          <i class="bi bi-whatsapp"></i>
+        </div>
+        <div class="info__end-2">
+          <a href="#"><strong>Az</strong> |</a>
+          <a href="#">En</a>
+        </div>
+      </div>
+      <ul class="navbar__links-info">
+        <li><a href="index.html">Ana səhifə</a></li>
+        <li><a href="#">Haqqımızda</a></li>
+        <li><a href="#">Xidmətlər</a></li>
+        <li><a href="#">Vakansiyalar</a></li>
+        <li><a href="#">Qanunvericilik</a></li>
+        <li><a href="articles.html">Məqalələr</a></li>
+        <li><a href="#">Əməkdaşlar</a></li>
+        <li><a href="#">Əlaqə</a></li>
+      </ul>
+    </div>
+
+    <header class="header">
+      <nav class="navbar nav">
+        <div class="navbar__logo">
+          <img src="./assets/images/logo.png" />
+        </div>
+        <ul class="navbar__links">
+          <li><a href="index.html">Ana səhifə</a></li>
+          <li><a href="#">Haqqımızda</a></li>
+          <li><a href="#">Xidmətlər</a></li>
+          <li><a href="#">Vakansiyalar</a></li>
+          <li><a href="#">Qanunvericilik</a></li>
+          <li><a href="articles.html">Məqalələr</a></li>
+          <li><a href="#">Əməkdaşlar</a></li>
+          <li><a href="#">Əlaqə</a></li>
+        </ul>
+        <div class="navbar__search">
+          <i class="bi bi-search" onclick="searchOn()"></i>
+          <i class="bi bi-x" onclick="searchOff()"></i>
+          <input
+            type="search"
+            name=""
+            id=""
+            class="search__input"
+            placeholder="AXTAR"
+          />
+        </div>
+      </nav>
+
+      <div class="header-background">
+        <div class="flag mactive ">
+          <img src="./assets/images/Group 3407 1.png" alt="" />
+          <p class="x1 content">AZƏRBAYCANDAKI&nbsp;TƏRƏFDAŞLARIMIZA</p>
+          <p class="x2 content">TƏŞƏKKÜR&nbsp;EDİRİK!</p>
+        </div>
+        <div class="flag flag-2 ">
+          <img src="./assets/images/germ.png" alt="" />
+          <p class="x1 content">ALMANİYADAKI&nbsp;TƏRƏFDAŞLARIMIZA</p>
+          <p class="x2 content">TƏŞƏKKÜR&nbsp;EDİRİK!</p>
+        </div>
+        <div class="flag ">
+          <img src="./assets/images/turk.png" alt="" />
+          <p class="x1 content">TÜRKİYƏDƏKİ&nbsp;TƏRƏFDAŞLARIMIZA</p>
+          <p class="x2 content">TƏŞƏKKÜR&nbsp;EDİRİK!</p>
+        </div>
+      </div>
+
+      <div class="calculate">
+        <i class="bi bi-chevron-left" onclick="Calc()"></i>
+        <p>Xidmətlərin&nbsp;dəyəri</p>
+      </div>
+
+      <div class="calculate_C">
+        <h3>Xidmətlərin dəyəri</h3>
+        <i class="bi bi-chevron-right" onclick="CalcOff()"></i>
+        <div>
+          <div class="radios">
+            <h4>Mühasibat uçotu standartları</h4>
+            <div>
+              <label for="a1">
+                <input type="radio" name="a1" id="a1" class="raido" />
+                Milli standartlar
+              </label>
+              <label for="a1">
+                <input type="radio" name="a1" id="a1" class="radio"/>
+                Beynəlxalq standartlar
+              </label>
+            </div>
+          </div>
+          <div class="radios">
+            <h4>Vergi tutma sistemi</h4>
+            <div>
+              <label for="a2">
+                <input type="radio" name="a2" id="" />
+                Sadələşdirilmiş
+              </label>
+              <label for="a2">
+                <input type="radio" name="a2" id="" />
+                ƏDV
+              </label>
+              <label for="a2">
+                <input type="radio" name="a2" id="" />
+                Mənfəət və ya gəlir vergisi
+              </label>
+            </div>
+          </div>
+          <div>
+            <h4>Sənəd və ya əməliyyat dövriyyəsi</h4>
+            <select name="" id="">
+              <option value="">Həcmi seçin</option>
+            </select>
+          </div>
+          <div>
+            <h4>Əməkdaşların sayı</h4>
+            <select name="" id="">
+              <option value="">Həcmi seçin</option>
+            </select>
+          </div>
+          <div class="calculate_inputs">
+            <input type="text" placeholder="E-mail adresiniz" />
+            <input type="text" placeholder="+994 (__) ___ __ __" />
+          </div>
+          <div class="calculate_bottom">
+            <span>Cəmi: 145 AZN/Ay</span>
+            <button>SİFARİŞ ETMƏK</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="about container">
+      <div>
+        <img src="./assets/images/about.png" alt="" />
+      </div>
+      <div>
+        <h2>Haqqımızda</h2>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+          qui ratione voluptatem sequi nesciunt. <br />
+          <br />
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+          consectetur, adipisci velit, sed quia non numquam eius modi tempora
+          incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </p>
+        <a href="#">ƏTRAFLI</a>
+      </div>
+    </section>
+
+    <div class="swiper mySwiper services">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/images/service-1.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/service-2.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/service-3.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/service-4.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/service-5.png" alt="" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="customer">
+      <h2>Müştərilərimiz</h2>
+
+      <div>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias.
+        </p>
+        <div></div>
+      </div>
+
+      <div class="customer__slide">
+        <div><img src="./assets/images/slide-logo.png" /></div>
+        <div><img src="./assets/images/slide-logo.png" /></div>
+        <div><img src="./assets/images/slide-logo.png" /></div>
+        <div><img src="./assets/images/slide-logo.png" /></div>
+        <div><img src="./assets/images/slide-logo.png" /></div>
+      </div>
+    </section>
+
+    <section class="subscribe container">
+      <div>
+        <img src="./assets/images/abune.png" alt="" />
+      </div>
+      <div class="subscribe__end">
+        <h2>Abunə olun</h2>
+        <p>
+          Yeni qəbul edilmiş qərarlar, verilmiş əmrlər və digər məlumatlar
+          barədə hamıdan tez xəbər tutmaq üçün abunə olmağınız tövsiyyə olunur
+        </p>
+        <div class="subscribe__end-input">
+          <input
+            type="text"
+            placeholder="E-mail ünvanınızı daxil edin"
+          /><button>TƏSDİQ&nbsp;ET</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div><img src="./assets/images/map.png" alt="" /></div>
+    </section>
+
+    <footer>
+      <div class="footer__top">
+        <div><img src="./assets/images/logo.png" alt="" /></div>
+
+        <div class="footer__top-end">
+          <div class="footer__top-end-1">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p>
+              Bakı şəh., Nərimanov r-nu, X.Şuşinski ilə M.Sənani küçələrinin
+              kəsişməsi (Bina MTK)
+            </p>
+          </div>
+          <div class="footer__top-end-2">
+            <i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;<a href="#"
+              >(994) 12 480 10 22</a
+            >
+            <br />
+            <a href="#">(994) 55 281 86 84</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>Copyright © 2020 ALiAS Group - Bütün hüquqlar qorunur.</p>
+        <p>
+          <span>Privacy Policy</span>
+          <span>Terms of use</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- hover slide -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+  
+    <script src="./assets/js/script.js">
+
+    </script>
+  </body>
+</html>
